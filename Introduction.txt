@@ -1,0 +1,29 @@
+=> Web Development : 
+-> Basic : 
+    1. HTML  :- Hyper Text Markup Language (Completed)
+            - create a Structure of Webpage/Website
+
+    2. CSS   :- Cascading Style Sheet      (Starting)
+            - design Structure (style)
+
+    3. JS    :- Javascript                 (Soon)
+            - Functionality
+
+
+Version : 
+    CSS1
+    CSS2
+    CSS3 (latest)
+
+
+=> Extension : .css 
+
+
+=> How to Implement of CSS in a HTML  ? 
+    -  Inline CSS
+    -  Internal CSS 
+    -  External CSS
+
+
+Note : We can use HTML without CSS.
+       We can't use CSS without HTML.
