@@ -1,0 +1,65 @@
+1. Basic Selectors
+Universal Selector
+
+Type (Element) Selector
+
+Class Selector
+
+ID Selector
+
+2. Grouping and Combinator Selectors
+Grouping Selector
+
+Descendant Selector
+
+Child Selector (>)
+
+Adjacent Sibling Selector (+)
+
+General Sibling Selector (~)
+
+3. Pseudo-class Selectors
+:hover
+
+:focus
+
+:active
+
+:visited
+
+:first-child
+
+:last-child
+
+:nth-child()
+
+:nth-last-child()
+
+:only-child
+
+:not()
+
+4. Pseudo-element Selectors
+5. Attribute Selectors
+[attribute]
+
+[attribute="value"]
+
+[attribute^="value"]
+
+[attribute$="value"]
+
+[attribute*="value"]
+
+6. Structural Pseudo-class Selectors
+:first-of-type
+
+:last-of-type
+
+:nth-of-type()
+
+:nth-last-of-type()
+
+:only-of-type
+
+:empty
