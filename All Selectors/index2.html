@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class Selectors</title>
+
+    <style>
+        /* Element Selector */
+        /* a{
+            color: red;
+        } */
+
+        /*  */
+        a:visited{
+            color: lime;
+        }
+        a:link{
+            color: red;
+        }
+        a:active{
+            color: blueviolet;
+        }
+        /* Hover Effect */
+        /* a:hover{
+            color: yellow;
+        } */
+
+        img:hover{
+            outline: 10px solid blue;
+        }
+        input:focus{
+            /* outline: none; */
+            outline: 10px double blue;
+        }
+        /* ul{
+            color: red;
+        } */
+
+        li{
+            color: blue;
+        }
+
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: yellow;
+        }
+
+        li:nth-child(5){
+            color: crimson;
+        }
+        li:nth-child(6){
+            color: crimson;
+        }
+
+        /* li:nth-child(2n){
+            color: aqua;
+        } */
+        /* li:nth-child(3n){
+            color: aqua;
+        } */
+        /* li:nth-child(2n+1){
+            color: aqua;
+        }  */
+        /* li:nth-child(even){
+            color: aqua;
+        }  */
+        /* li:nth-child(odd){
+            color: aqua;
+        }  */
+    </style>
+</head>
+<body>
+    <!-- <input type="text">
+    <br>
+    <a href="#">Link</a>
+    <br>
+    <a href="https://www.google.com/">Google</a>
+    <br>
+    <a href="https://www.youtube.com">youtube</a>
+    <br>
+
+    <img src="https://imgs.search.brave.com/qYkfAM5DOGhfy1fpzGl1oxZ5lZ8e_bgr8SG70url83c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aG91c2VvZmhhY2tu/ZXkuY29tL2Nkbi9z/aG9wL2ZpbGVzL3Bs/YW50YXNpYV9kaWdp/dGFsX3dhbGxwYXBl/cl9zYWdlX2xpZmVz/dHlsZV80LmpwZz9j/cm9wPWNlbnRlciZo/ZWlnaHQ9MTYwMCZ2/PTE3MjI4NTU5MDMm/d2lkdGg9MTYwMA" alt="" width="200px"> -->
+
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+        <li>List 5</li>
+        <li>List 6</li>
+        <li>List 7</li>
+        <li>List 8</li>
+        <li>List 9</li>
+        <li>List 10</li>
+    </ul>
+</body>
+</html>

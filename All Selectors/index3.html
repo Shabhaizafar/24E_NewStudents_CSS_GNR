@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element Selectors</title>
+    <style>
+        p{
+            color: red;
+        }
+        p::first-line{
+            color: aqua;
+        }
+        p::first-letter{
+            color: blue;
+        }
+        input{
+            color: blue;
+        }
+        input::placeholder{
+            color: yellow;
+        }
+        p::before{
+            content: 'Zafar : ';
+        }
+        p::after{
+            content: "Ending";
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Somthing">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum provident eveniet dolores quae quis. Quos suscipit asperiores exercitationem iste, cumque neque corrupti pariatur eius laboriosam, quidem officia rem delectus enim.</p>    
+
+</body>
+</html>
+
+
