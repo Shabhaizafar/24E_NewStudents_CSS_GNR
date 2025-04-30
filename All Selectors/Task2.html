@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Demo - Instructions</title>
+  <style>
+    h1{
+        font-family: ;
+        background-color: aqua;
+        padding: 20px;
+    }
+  </style>
+  <!-- 
+    Instructions:
+    
+    1. Use :root to define --main-color and --shadow variables.
+    2. Apply * selector to set all text color to var(--main-color).
+    3. Style body with a font-family and padding.
+
+    4. Use ID selector (#header) to apply text-shadow using --shadow.
+    5. Use class selector (.card) to apply box-shadow, padding, and margin.
+    6. Use attribute selector [data-info] to add an outline.
+    
+    7. Link States:
+       a:link     - set color to blue
+       a:visited  - set color to purple
+       a:hover    - set color to orange
+       a:active   - set color to red
+    
+    8. Use :focus on input to show outline.
+    9. Use ::first-line and ::first-letter on .text.
+    10. Use ::before and ::after on .note to insert content.
+    11. Style input::placeholder.
+    
+    12. Group selector: apply outline to both .grouping and #header.
+    
+    13. List pseudo-classes:
+        - ul li:first-child  → bold
+        - ul li:last-child   → italic
+        - ul li:nth-child(2) → green
+    
+    14. Use Adjacent Sibling Selector (.first + .second) → orange color
+    15. Use General Sibling Selector (.first ~ .note) → smaller font
+    
+    16. Add -webkit-box-reflect to .mirror element for reflection.
+  -->
+</head>
+<body>
+
+  <h1 id="header">CSS Selectors Demo</h1>
+
+  <div class="card grouping">This uses grouping and class selector</div>
+
+  <div class="card" data-info>This uses attribute selector</div>
+
+    
+  <p class="text">This paragraph demonstrates ::first-line and ::first-letter.</p>
+
+  <p class="note">This uses ::before and ::after pseudo-elements.</p>
+
+  <input type="text" placeholder="Focus and placeholder example">
+
+  <div class="card mirror">Reflected Text with -webkit-box-reflect</div>
+
+  <a href="#">Hover, visited, active link</a>
+
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Last item</li>
+  </ul>
+
+  
+  <p class="first">First paragraph</p>
+  <p class="second">Adjacent sibling of first</p>
+  <p class="note">General sibling of first</p>
+
+</body>
+</html>

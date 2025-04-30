@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --txt-clr-1 : teal;
+            --txt-clr-2 : brown;
+            --txt-clr-3 : aqua;
+            --txt-clr-4 : darkorange;
+            --txt-clr-5 : red;
+
+            --outline-1 : 5px dashed crimson;
+        }
+        h1{
+            color: var(--txt-clr-1);
+        }
+        h2,h3{
+            color: var(--txt-clr-2);
+            outline: var(--outline-1);
+        }
+        section pre{
+            color: var(--txt-clr-3);
+        }
+        h1 ~ p{
+            color: var(--txt-clr-4);
+        }
+        h2 + p{
+            color: var(--txt-clr-5);
+        }
+
+        blockquote{
+            color: var(--txt-clr-5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus deleniti praesentium esse ut architecto dolor nihil doloribus nobis culpa illo? Rerum, consequuntur delectus! Fuga, placeat perferendis quibusdam nostrum explicabo consequatur?</p>
+        <h2>HEHEE</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, repellendus quisquam! Nostrum ea officiis vitae dolore architecto delectus adipisci. Non perspiciatis repudiandae, temporibus excepturi consectetur qui mollitia animi beatae eum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit necessitatibus, repudiandae placeat exercitationem quis repellat eum, saepe aliquam nulla, distinctio sequi dolor. Vitae necessitatibus ullam unde! Quia culpa maxime quibusdam!</p>
+        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quisquam repudiandae veritatis pariatur repellendus tempore molestiae magni labore cupiditate nesciunt deserunt saepe unde, nostrum alias eum ipsam maiores. Voluptatem, facilis?</blockquote>
+        <section>
+            <h3>Sub Heading </h3>
+            <pre>
+                void Main(){
+                    printf('Hello');
+                }
+            </pre>
+        </section>
+    </div>
+</body>
+</html>
