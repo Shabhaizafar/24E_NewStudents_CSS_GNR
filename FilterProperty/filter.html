@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        img{
+            /*---------------------------------  */
+            /* blur : px
+             */
+            /* filter: blur(100px); */
+            /*---------------------------------  */
+            /* opacity : 0-1
+            default: 1
+             */
+            /* filter: opacity(0); */
+
+            /*---------------------------------  */
+            /* 
+            sepia : 0-1
+            default: 0
+             */
+            /* filter: sepia(1); */
+            /*---------------------------------  */
+            /* grayscale : 0-1
+            default : 0 */
+            /* filter: grayscale(1); */
+            /*---------------------------------  */
+
+            /* deg  : default 0deg */
+            /* filter: hue-rotate(270deg); */
+
+            /*---------------------------------  */
+            /* default : 0 */
+            /* filter: invert(1); */
+
+            /* ---------------------------------- */
+            /* box-shadow: 5px 5px 5px red; */
+            /* filter: drop-shadow(5px 5px 5px red); */
+
+            /* --------------------------- */
+            /* filter: invert(1) drop-shadow(5px 5px 5px red); */
+            
+            /* opacity: 0.1; */
+        }
+        .i1:hover{
+            filter: blur(5px);
+        }
+
+        /* default : 100%     % */
+        .i1{
+            /* 0: black */
+            filter: brightness(300%);
+        }
+        .i2{
+            /* 0: gray */
+            filter: contrast(300%);
+        }
+        .i3{
+            /* 0: black+white */
+            filter: saturate(300%);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://imgs.search.brave.com/OvOuNEhTSbzffeUYLFiTfNRDA9KKS9VePvxLvs1KEy8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9maXJlZm94/LTIzLTU2LWljb24t/MjUweDI1Ni0wc2h5/YTVvNi5wbmc" alt="">
+    <img src="https://imgs.search.brave.com/OvOuNEhTSbzffeUYLFiTfNRDA9KKS9VePvxLvs1KEy8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9maXJlZm94/LTIzLTU2LWljb24t/MjUweDI1Ni0wc2h5/YTVvNi5wbmc" alt="" class="i1">
+    <img src="https://imgs.search.brave.com/OvOuNEhTSbzffeUYLFiTfNRDA9KKS9VePvxLvs1KEy8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9maXJlZm94/LTIzLTU2LWljb24t/MjUweDI1Ni0wc2h5/YTVvNi5wbmc" alt="" class="i2">
+    <img src="https://imgs.search.brave.com/OvOuNEhTSbzffeUYLFiTfNRDA9KKS9VePvxLvs1KEy8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9maXJlZm94/LTIzLTU2LWljb24t/MjUweDI1Ni0wc2h5/YTVvNi5wbmc" alt="" class="i3">
+</body>
+</html>
