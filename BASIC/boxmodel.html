@@ -5,16 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            /* default */
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+        }
         div{
             background-color: aqua;
-            width: 50%;
+            width: 400px;
+            height:200px;
+            padding: 30px;
+            border: 10px solid black;
+            /* margin: 100px auto; */
+
+            display: inline-block;
+            margin: 100px;
         }
+
+        /* 
+        Max width :  width + padding-left + padding-right + border-left + border-right
+                  :   400  +    30         +      30       +     10     +    10px
+                  :   480px
+        Max Height : height + padding-top + padding-bottom + border-top + border-bottom
+                    :   200       30           30                  10           10
+                    :   280px
+        */
+
+        /* 
+        Area :  
+        */
     </style>
 </head>
 <body>
-    <div>
+    <!-- <div>
         <h1>Box Model</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati amet laboriosam debitis facere, cum, quod reiciendis tempora, vel laborum necessitatibus hic numquam aperiam quae illum nihil quasi commodi laudantium?</p>
-    </div>
+    </div> -->
+
+    <!-- ert -->
+
+    <div></div>
+    <div></div>
 </body>
 </html>
