@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+
+            /* ignore */
+            font-family: calibri;
+        }
+        section{
+            background-color: rgb(158, 6, 6);
+            width: 200px;
+            height: 200px;
+            margin: 10px auto;
+            position: relative;
+        }
+        img{
+            width: 100%;
+            position: absolute;
+            transition-property: width opacity;
+            opacity: .2;
+            transition-duration: 2s;
+            /* transition-delay: 5s; */
+        }
+        img:hover{
+            /* width: 300px;
+            height: 300px;
+            opacity: .2; */
+              /* transition-property: width opacity; */
+
+            /* transition-duration: 2s; */
+        }
+        .transition{
+            /* transition-property: all; */
+            /* transition-property: width opacity;
+
+            transition-duration: 2s;
+            transition-delay: 5s; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>1. with transition</h2>
+    <section>
+        <img src="https://imgs.search.brave.com/B2GHnUQdk5b2TgIWP4M--oQtxKOP-A1t73DNtFCDNzg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/Ymx1c2guY29tL2Nk/bi9zaG9wL2ZpbGVz/L0NoZWNrZXJfTW9j/a3VwXzIuanBnP3Y9/MTczOTIyODA3MCZ3/aWR0aD0yMDQ4" alt="" class="transition">
+    </section>
+    <h2>1. without transition</h2>
+    <section>
+        <img src="https://imgs.search.brave.com/B2GHnUQdk5b2TgIWP4M--oQtxKOP-A1t73DNtFCDNzg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/Ymx1c2guY29tL2Nk/bi9zaG9wL2ZpbGVz/L0NoZWNrZXJfTW9j/a3VwXzIuanBnP3Y9/MTczOTIyODA3MCZ3/aWR0aD0yMDQ4" alt="">
+    </section>
+
+    
+</body>
+
+</html>
