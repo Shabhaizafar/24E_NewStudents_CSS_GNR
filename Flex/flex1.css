@@ -1,0 +1,55 @@
+section{
+    background-color: teal;
+    height: 600px;
+
+    display: flex;
+
+    /*default*/
+    /* justify-content: left; */
+    /* justify-content: flex-start; */
+    /* justify-content: start; */
+
+    /* justify-content: flex-end; */
+    /* justify-content: right; */
+    /* justify-content: end; */
+
+    justify-content: center;
+
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    gap: 20px;
+}
+
+div{
+    /* display: block; */
+    /* display: inline; */
+    /* display: inline-block; */
+    
+    flex-grow: 1;
+}
+.box1{
+    background-color: lightcoral;
+}
+.box2{
+    background-color: lightgreen;
+}
+.box3{
+    background-color: lightslategray;
+}
+.box4{
+    background-color: lightgoldenrodyellow;
+}
+.box5{
+    background-color: darkorange;
+}
+.box6{
+    background-color: darkolivegreen;
+}
+.box7{
+    background-color: darkorchid;
+}
+.box8{
+    background-color: darkslategrey;
+}
