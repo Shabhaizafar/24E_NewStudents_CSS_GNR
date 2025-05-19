@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexbox Example Page</title>
+ 
+</head>
+<body>
+
+  <h1>Flexbox Layout Example</h1>
+
+  <!-- Container that uses Flexbox -->
+  <div class="container">
+
+    <!-- Flex Item 1 -->
+    <div class="box">Box 1</div>
+
+    <!-- Flex Item 2 with increased grow -->
+    <div class="box">Box 2 (Grow: 2)</div>
+
+    <!-- Flex Item 3 with increased shrink -->
+    <div class="box">Box 3 (Shrink: 2)</div>
+
+    <!-- Flex Item 4 -->
+    <div class="box">Box 4</div>
+
+  </div>
+
+</body>
+</html>
+
+
+<!-- 
+
+### 💡 Flexbox Layout Instructions 
+
+To style this webpage using Flexbox, begin by setting the `body` to use the Arial font, apply a light gray background color (`#f0f0f0`), and add 20 pixels of padding to give the content breathing space.
+
+Next, create a container and apply `display: flex` to enable Flexbox. Set the `flex-direction` to `row` so that the child elements (boxes) are laid out horizontally. Use `justify-content: space-between` to distribute the boxes with space between them. Enable wrapping using `flex-wrap: wrap` to ensure that items can move to the next line if there's not enough space. Add a `gap` of 20 pixels between the flex items to create visual spacing. Give the container a white background, some internal padding of 20 pixels, and rounded corners using `border-radius: 10px`.
+
+For each individual box (child of the container), apply a green background color (`#4CAF50`), white text, 20 pixels of padding, centered text alignment, and slightly rounded corners with `border-radius: 8px`. To control the size behavior, set `flex-grow: 1` so that all boxes expand equally to fill available space, `flex-shrink: 1` to allow them to shrink if needed, and `flex-basis: 200px` as their starting width before growing or shrinking.
+
+To differentiate specific boxes, give the second box a blue background (`#2196F3`) and set `flex-grow: 2`, making it grow twice as much as the others. For the third box, assign a red background (`#f44336`) and `flex-shrink: 2` so it shrinks more quickly when the container space is reduced.
+
+These settings collectively demonstrate key Flexbox properties including layout direction, spacing, wrapping, and dynamic resizing behavior based on grow, shrink, and basis values.
+
+
+-->
