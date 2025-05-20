@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        section {
+            background-color: teal;
+            height: 600px;
+            display: flex;
+            gap: 10px;
+
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: self-start; */
+            /* align-items: self-end; */
+
+            /* align-items: center; */
+            /* align-items: first baseline; */
+            /* align-items:  baseline; */
+
+            /* align-items: last baseline; */
+
+        }
+        div,h1,span,p{
+            background-color: red;
+            flex-grow: 1;
+        }
+        h1{
+            /* align-self: stretch; */
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+
+            align-content: center;
+            text-align: center;
+            order: 0;
+            /* order: -1; */
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>Div1</div>
+        <h1>H1</h1>
+        <div>Div3</div>
+        <p>P</p>
+        <span>Span</span>
+    
+    
+</body>
+</html>
