@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    padding: 120px 100px;
+}
+
+section:nth-child(1){
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 30px;
+    color: rgb(88, 86, 86);
+}
+section:nth-child(1) h2{
+    border-bottom: 1px solid  rgb(88, 86, 86);;
+    width: fit-content;
+    margin: auto;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+section:nth-child(2){
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section:nth-child(2) main{
+    flex-basis: 250px;
+    height: 250px;
+    flex-grow: 1;
+
+    /*  */
+    background-image: url("https://templatemo.com/templates/templatemo_406_flex/images/gallery/p1.jpg");
+    background-size: 100% 100%;
+}
+section:nth-child(2) main:hover{
+    background-image: url("");
+    background-color: aqua;
+}
