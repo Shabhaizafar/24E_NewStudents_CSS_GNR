@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: black;
+            width: 100%;
+            height: 1620px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: .2fr .6fr 1.2fr .9fr 1fr .9fr .8fr .2fr;
+            gap: 10px;
+        }
+        div:first-child{
+            background-color: rgb(3, 184, 255);
+        }
+        div:nth-child(even){
+            background-color: gainsboro;
+        }
+         div:last-child{
+            background-color: rgb(3, 184, 255);
+        }
+        div:nth-child(3){
+            background-color: limegreen;
+        }
+        div:nth-child(5){
+            background-color: mediumorchid;
+        }
+        div:nth-child(7){
+            background-color: orangered;
+        }
+        div{
+            display: grid;
+            grid-template-columns: .4fr 1fr 1fr .4fr;
+            grid-template-rows: 1fr;
+        }
+        div:nth-child(2) {
+            grid-template-columns: 1.2fr .15fr .2fr .15fr 1.2fr;
+            grid-template-rows: 1fr .5fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        div:nth-child(2)  main:first-child{
+            background-color: grey;
+            grid-column: 3;
+        }
+         div:nth-child(2)  main:last-child{
+            background-color: grey;
+            grid-column: 2/5;
+            grid-row: 2;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="container">
+        <div></div>
+        <div>
+            <main></main>
+            <main></main>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <form action="" method="post">
+        <input type="text" name="sed">
+        <input type="submit" value="sd">
+    </form>
+</body>
+</html>

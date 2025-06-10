@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        div{
+            background-color: teal;
+            width: 100px;
+            height: 100px;
+            /* position: relative; */
+            transition: all 2s;
+        }
+        div:hover{
+            /* using margin */
+            /* margin-left: 400px; */
+            /* transform: translateX(400px); */
+            /* left: 400px; */
+        }
+    </style> -->
+    <style>
+        div{
+            background-color: teal;
+            width: 100px;
+            height: 100px;
+            animation-name: box;
+            animation-duration: 2s;
+            /* animation-iteration-count: 3; */
+            animation-iteration-count: infinite;
+            margin-top: 200px;
+            /* animation-direction: normal; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: reverse; */
+        }
+
+        /* Method : 1 */
+        @keyframes box {
+            from{
+                /* width: 100px; */
+                transform: translateX(0px);
+                /* background-color: teal; */
+            }
+            to{
+                /* width: 200px; */
+                transform: translateX(400px);
+                /* background-color: brown; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
+

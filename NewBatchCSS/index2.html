@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        section{
+            height: 1100px;
+            background-color: lightcoral;
+            padding: 40px 100px;
+            display: grid;
+            grid-template-columns: .1fr .25fr .15fr .3fr .15fr .4fr .15fr 1fr;
+            grid-template-rows: .28fr .7fr  1fr .2fr .4fr 2fr .9fr 1fr;
+        }
+        footer{
+            background-color: rgb(12, 11, 11);
+            padding: 40px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            font-size: 14px;
+        }
+        div:nth-child(1){
+            grid-row: 2/4;
+            grid-column: 2/4;
+        }
+        div:nth-child(2){
+            background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/c473544656f7540fafcd0b36/pexels-photo-4197799.jpeg");
+            background-size: 100% 100%;
+            grid-row: 1/5;
+            grid-column: 5/7;
+        }
+        div:nth-child(3){
+            grid-row: 6;
+            grid-column: 3/6;
+            border-radius: 50%;
+        }
+        div:nth-child(3) img{
+             border-radius: 50%;
+        }
+        div:nth-child(4){
+                background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/2ac5871157435619a3e1a3e0/pexels-photo-6362272.jpeg");
+            background-size: 100% 100%;
+
+                grid-row: 3/8;
+                grid-column: 8;
+        }
+        p:nth-child(5){
+                grid-row: 7/9;
+                grid-column: 1/7;
+        }
+        img{
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div><img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/9a9ed2b7e0055e819d09639f/pexels-photo-8923600.jpeg" alt=""></div>
+        <div></div>
+       <div> <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/74da698e4a305b6088c1be26/pexels-photo-7175330.jpeg" alt=""></div>
+        <div></div>
+        <p>Porta nibh venenatis cras sed. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Consectetur libero id faucibus nisl tincidunt. Ullamcorper a lacus vestibulum sed arcu non odio. Non tellus orci ac auctor augue. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. </p>
+    </section>
+    <footer>
+        <p><a href="#">Website Templates</a> created with <a href="#">Website Builder Software</a>.</p>
+    </footer>
+</body>
+</html>
