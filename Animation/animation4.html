@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        section{
+            display: flex;
+            width: 50%;
+            height: 30px;
+            margin: 200px auto;
+            position: relative;
+        }
+        div{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            animation-name: box;
+            animation-duration: 600ms;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        @keyframes box {
+            from{
+                left: 0%;
+            }
+            to{
+                left: calc(100% - 30px);
+            }
+        }
+        div:first-child{
+            background-color: red;
+            animation-delay: 100ms;
+        }
+        div:nth-child(2){
+            background-color: blue;
+            animation-delay: 200ms;
+        }
+        div:nth-child(3){
+            background-color: green;
+            animation-delay: 300ms;
+        }
+        div:nth-child(4){
+            background-color: yellow;
+            animation-delay: 400ms;
+        }
+        div:nth-child(5){
+            background-color: purple;
+            animation-delay: 500ms;
+        }
+        div:last-child{
+            animation-delay: 600ms;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>
