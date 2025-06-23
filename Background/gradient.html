@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!-- <style>
         div{
             width: 200px;
             height: 200px;
@@ -53,14 +54,90 @@
         .box14{
             background-image: repeating-linear-gradient(to right bottom,red 0px,red 20px,yellow 20px,yellow 40px);
         }
-    </style>
+    </style> -->
     <!-- 
         linear gradient 
+    -->
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        .box15{
+            background-image: linear-gradient(red,yellow);
+        }
+        .box16{
+            background-image: radial-gradient(red,yellow);
+        }
+        .box17{
+            background-image: radial-gradient(at left,red,yellow);
+        }
+        .box18{
+            background-image: radial-gradient(at left bottom,red,yellow);
+        }
+        .box19{
+            background-image: radial-gradient(at 50px 50px,red,yellow);
+        }
+        .box20{
+            background-image: radial-gradient(red 0px,red 20px,yellow 20px,yellow);
+        }
+        
+        .box21{
+            background-image: radial-gradient(at left,red 0px,red 20px,yellow 20px,yellow);
+        }
+        .box22{
+            background-image: radial-gradient(circle at left,red 0px,red 20px,yellow 20px,yellow);
+        }
+        
+        .box23{
+            background-image: repeating-radial-gradient(red 0px,red 20px,yellow 20px,yellow 40px);
+        }
+        .box24{
+            background-image: repeating-radial-gradient(at left,red 0px,red 20px,yellow 20px,yellow 40px);
+        }
+        .box25{
+            background-image: repeating-radial-gradient(circle at left,red 0px,red 20px,yellow 20px,yellow 40px);
+        }
+        .box26{
+            /* background-image: repeating-linear-gradient(teal 0px,teal 10px,crimson 10px, crimson 20px); */
+
+              /* background-image: repeating-radial-gradient(red 0px,red 20px,transparent 20px,transparent 40px),repeating-linear-gradient(teal 0px,teal 10px,crimson 10px, crimson 20px); */
+
+              background-image: repeating-radial-gradient(red 0px,red 20px,yellow 20px,yellow 40px),repeating-linear-gradient(teal 0px,teal 10px,crimson 10px, crimson 20px);
+              background-blend-mode: color;
+        }
+        .box27{
+                background-image: conic-gradient(red,yellow);
+        }
+        
+        .box28{
+                background-image: conic-gradient(red,yellow,red);
+        }
+        .box29{
+                background-image: conic-gradient(red 0deg,red 120deg,yellow 120deg,yellow);
+        }
+        .box30{
+                background-image: repeating-conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg);
+        }
+        
+        .box31{
+                background-image: repeating-conic-gradient(black 0deg,black 90deg,white 90deg,white 180deg);
+                background-size: 50px 50px;
+                background-repeat: repeat;
+        }
+    </style>
+    <!-- 
+        radial-gradient 
+        repeating-radial-gradient
+        conic-gradient
+        repeating-conic-gradient
     -->
 </head>
 
 <body>
-        <div class="box1">box1</div>
+    <!-- <div class="box1">box1</div>
         <div class="box2">box2</div>
         <div class="box3">box3</div>
         <div class="box4">box4</div>
@@ -73,38 +150,39 @@
         <div class="box11">box11</div>
         <div class="box12">box12</div>
         <div class="box13">box13</div>
-        <div class="box14">box14</div>
-        <div class="box15">box15</div>
-        <div class="box16">box16</div>
-        <div class="box17">box17</div>
-        <div class="box18">box18</div>
-        <div class="box19">box19</div>
-        <div class="box20">box20</div>
-        <div class="box21">box21</div>
-        <div class="box22">box22</div>
-        <div class="box23">box23</div>
-        <div class="box24">box24</div>
-        <div class="box25">box25</div>
-        <div class="box26">box26</div>
-        <div class="box27">box27</div>
-        <div class="box28">box28</div>
-        <div class="box29">box29</div>
-        <div class="box30">box30</div>
-        <div class="box31">box31</div>
-        <div class="box32">box32</div>
-        <div class="box33">box33</div>
-        <div class="box34">box34</div>
-        <div class="box35">box35</div>
-        <div class="box36">box36</div>
-        <div class="box37">box37</div>
-        <div class="box38">box38</div>
-        <div class="box39">box39</div>
-        <div class="box40">box40</div>
-        <div class="box41">box41</div>
-        <div class="box42">box42</div>
-        <div class="box43">box43</div>
-        <div class="box44">box44</div>
-        <div class="box45">box45</div>
+        <div class="box14">box14</div> 
+    -->
+    <div class="box15">box15</div>
+    <div class="box16">box16</div>
+    <div class="box17">box17</div>
+    <div class="box18">box18</div>
+    <div class="box19">box19</div>
+    <div class="box20">box20</div>
+    <div class="box21">box21</div>
+    <div class="box22">box22</div>
+    <div class="box23">box23</div>
+    <div class="box24">box24</div>
+    <div class="box25">box25</div>
+    <div class="box26">box26</div>
+    <div class="box27">box27</div>
+    <div class="box28">box28</div>
+    <div class="box29">box29</div>
+    <div class="box30">box30</div>
+    <div class="box31">box31</div>
+    <div class="box32">box32</div>
+    <div class="box33">box33</div>
+    <div class="box34">box34</div>
+    <div class="box35">box35</div>
+    <div class="box36">box36</div>
+    <div class="box37">box37</div>
+    <div class="box38">box38</div>
+    <div class="box39">box39</div>
+    <div class="box40">box40</div>
+    <div class="box41">box41</div>
+    <div class="box42">box42</div>
+    <div class="box43">box43</div>
+    <div class="box44">box44</div>
+    <div class="box45">box45</div>
 
 </body>
 
