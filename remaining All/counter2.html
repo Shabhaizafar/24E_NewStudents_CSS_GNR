@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: heading;
+        }
+        h2::before{
+            counter-increment: heading;
+            content: 'Part : 'counter(heading)' ';
+        }
+        h2{
+            counter-reset: para;   
+        }
+
+        p::before{
+            counter-increment: para;
+            content: counter(heading)'.'counter(para)' ';
+        }
+    </style>
+</head>
+<body>
+    <h2>Heading 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <h2>Heading 3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <h2>Heading 4</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem!</p>
+</body>
+</html>
