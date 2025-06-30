@@ -34,20 +34,44 @@
       font-size: 15px;
       color: #2e7d32;
     }
+
+    /* ------------------------- */
+    .ul1{
+      counter-reset: count1;
+    }
+    .category::before{
+      counter-increment: count1;
+      content: counter(count1)'. ';
+    }
+    .ul2{
+      counter-reset: count2;
+    }
+    .subcategory::before{
+      counter-increment: count2;
+      content: counter(count1)'.'counter(count2)' ';
+    }
+
+    .ul3{
+      counter-reset: count3;
+    }
+    .item::before{
+      counter-increment: count3;
+      content: counter(count1)'.'counter(count2)'.'counter(count3)' ';
+    }
   </style>
 </head>
 <body>
   <h1>Pure Veg Menu</h1>
-  <ul>
+  <ul class="ul1">
     <li class="category">Starters
-      <ul>
+      <ul class="ul2">
         <li class="subcategory">Tandoori</li>
-        <ul>
+        <ul class="ul3">
           <li class="item">Paneer Tikka</li>
           <li class="item">Tandoori Mushroom</li>
         </ul>
         <li class="subcategory">Chinese</li>
-        <ul>
+        <ul  class="ul3">
           <li class="item">Veg Spring Roll</li>
           <li class="item">Chilli Paneer</li>
         </ul>
@@ -55,15 +79,15 @@
     </li>
 
     <li class="category">Main Course
-      <ul>
+      <ul  class="ul2">
         <li class="subcategory">Indian</li>
-        <ul>
+        <ul  class="ul3">
           <li class="item">Paneer Butter Masala</li>
           <li class="item">Veg Kolhapuri</li>
           <li class="item">Dal Tadka</li>
         </ul>
         <li class="subcategory">South Indian</li>
-        <ul>
+        <ul  class="ul3">
           <li class="item">Masala Dosa</li>
           <li class="item">Vegetable Uttapam</li>
         </ul>
@@ -71,14 +95,14 @@
     </li>
 
     <li class="category">Rice & Breads
-      <ul>
+      <ul  class="ul2">
         <li class="subcategory">Rice</li>
-        <ul>
+        <ul  class="ul3">
           <li class="item">Veg Biryani</li>
           <li class="item">Jeera Rice</li>
         </ul>
         <li class="subcategory">Breads</li>
-        <ul>
+        <ul  class="ul3">
           <li class="item">Butter Naan</li>
           <li class="item">Tandoori Roti</li>
         </ul>
@@ -86,14 +110,14 @@
     </li>
 
     <li class="category">Desserts
-      <ul>
+      <ul  class="ul2">
         <li class="subcategory">Traditional</li>
-        <ul>
+        <ul  class="ul3">
           <li class="item">Gulab Jamun</li>
           <li class="item">Rasgulla</li>
         </ul>
         <li class="subcategory">Ice Creams</li>
-        <ul>
+        <ul  class="ul3">
           <li class="item">Vanilla</li>
           <li class="item">Kesar Pista</li>
         </ul>
