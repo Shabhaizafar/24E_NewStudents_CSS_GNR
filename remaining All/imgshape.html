@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            clip-path: circle(10%);
+            /* clip-path: ellipse(5% 10%); */
+            /* clip-path: circle(20%); */
+            /* clip-path: ellipse(25% 10%); */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: .0001s;
+        }
+        img:hover{
+            animation-name: box;
+        }
+        @keyframes box {
+            0%{
+                clip-path: circle(10%);
+            }
+            100%{
+                clip-path: circle(30%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://imgs.search.brave.com/0sDSQACKWZzXSSeeOabgnMSCSzW6u0FxPoMVK8bKy8w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvOTE2/Mjg0MC5qcGc" alt="" width="400px">
+</body>
+</html>
