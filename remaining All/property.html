@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @property --myclr{
+            syntax: "<color>";
+            inherits: true;
+            initial-value: blue;
+        }
+        div{
+            color: var(--myclr);
+        }
+        .pclass{
+            --myclr :red;
+        }
+    </style>
+</head>
+<body>
+    <div class="pclass">
+        <div>CSS</div>
+        JS
+    </div>
+</body>
+</html>
