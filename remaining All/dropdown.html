@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+        body {
+            background-color: rgb(190, 247, 190);
+        }
+        header{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 40px;
+        }
+        .menu {
+            font-family: calibri;
+            display: flex;
+        }
+        input{
+            background-color: rgb(231, 255, 231);
+            border: 2px solid rgb(190, 247, 190);
+            border-radius: 5px;
+            padding: 5px 30px;
+            font-family: calibri;
+            font-size: 18px;
+        }
+        input:focus{
+            outline: none;
+        }
+        .menu>li{
+            padding: 5px 20px;
+            cursor: pointer;
+        }
+        .menu>li:hover{
+            color: rgb(130, 228, 130);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="list">
+            <ul class="menu">
+                <li>Courses</li>
+                <li>Tutorials</li>
+                <li>Practice</li>
+                <li>Jobs</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="">
+                <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="">
+            </a>
+        </div>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="Search...">
+        </div>
+    </header>
+</body>
+
+</html>
