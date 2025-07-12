@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drop down</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         * {
             margin: 0px;
@@ -16,18 +17,21 @@
         body {
             background-color: rgb(190, 247, 190);
         }
-        header{
+
+        header {
             background-color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 5px 40px;
         }
+
         .menu {
             font-family: calibri;
             display: flex;
         }
-        input{
+
+        input {
             background-color: rgb(231, 255, 231);
             border: 2px solid rgb(190, 247, 190);
             border-radius: 5px;
@@ -35,15 +39,48 @@
             font-family: calibri;
             font-size: 18px;
         }
-        input:focus{
+
+        input:focus {
             outline: none;
         }
-        .menu>li{
-            padding: 5px 20px;
+
+        .menu>li {
+            padding: 5px 30px 5px  20px;
             cursor: pointer;
+            position: relative;
+            
         }
-        .menu>li:hover{
+
+        .menu>li:hover {
             color: rgb(130, 228, 130);
+        }
+        .menu>li:hover .dropdown{
+            display: block;
+            color: black;
+        }
+        .dropdown{
+            background-color: white;
+            position: absolute;
+            top: 40px;
+            left: 0px;
+            border-top: 3px solid rgb(80, 158, 80);
+            display: none;
+        }
+        .dropdown>li{
+            padding: 10px 20px;
+            width: 200px;
+        }
+        .dropdown>li:hover{
+            background-color: gainsboro;
+        }
+        .menu>li:hover>span{
+            transform: rotate(180deg);
+        }
+        .menu>li>span{
+            position: absolute;
+            right: 0px;
+            top: 4px;
+            transition: all .1s;
         }
     </style>
 </head>
@@ -55,7 +92,17 @@
                 <li>Courses</li>
                 <li>Tutorials</li>
                 <li>Practice</li>
-                <li>Jobs</li>
+                <li>Jobs 
+                    <span class="material-symbols-outlined">
+stat_minus_1
+</span>
+                    <ul class="dropdown">
+                        <li>Become a Mentor</li>
+                        <li>Apply Now!</li>
+                        <li>Post Jobs</li>
+                        <li>Job-A-Thon: Hiring Challenge</li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="logo">
@@ -64,6 +111,7 @@
             </a>
         </div>
         <div class="search">
+            
             <input type="search" name="" id="" placeholder="Search...">
         </div>
     </header>
